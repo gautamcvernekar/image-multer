@@ -52,7 +52,7 @@ app.engine('html', ejs.renderFile);
 
 app.use(express.static('./public'));
 
-app.listen(port, () => console.log('Server started'));
+app.listen(process.env.PORT ||port, () => console.log('Server started'));
 
 
 
